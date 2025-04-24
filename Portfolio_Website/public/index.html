@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.webp" alt="" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web developer UI/UX</p>
+                <h6>Hi, I'm <span>Kennedy Mwanzia</span> From <br> Kenya - Nairobi</h6>
+            </div>
+        </div>
+    </div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Sequi assumenda 
+                    asperiores et veniam recusandae, 
+                    quasi illo dolorem, iusto quae c
+                    onsectetur esse possimus 
+                    eligendi odit ab ipsa! 
+                    Aliquid tempore est dolor.</p>
+
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Design? UI/UX</span><br>Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>App development</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Design? UI/UX</span><br>Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>App development</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Design? UI/UX</span><br>Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>App development</li>
+
+                        </ul>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classlist.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classlist.remove("active-tab");
+    }
+}
+
+</script>
+    </body>
+</html>
