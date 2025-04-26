@@ -61,8 +61,8 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #00ff00;
-    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    background: aqua;
+    box-shadow: 0 0 5px aqua, 0 0 10px aqua;
     position: absolute;
     left: 0;
     bottom: -6px;
