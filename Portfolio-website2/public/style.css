@@ -81,7 +81,7 @@ font-size: 30px;
     margin-top: 20px;
 }
 .header-text h6 span{
-    color: rgb(214, 142, 8);
+    color: aquamarine;
 }
 
 #about{
@@ -123,7 +123,7 @@ font-size: 30px;
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(214, 142, 8);
+    background: aqua;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -137,7 +137,7 @@ width: 60%;
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: rgb(224, 176, 15);
+    color: aqua;
     font-size: 14px;
 }
 
@@ -183,7 +183,7 @@ margin-top: 50px;
     display: inline-block;
 }
 .services-list div:hover{
-    background: rgb(214, 142, 8);
+    background: aqua;
     transform: translateY(-20px);
 }
 #portfolio{
@@ -214,7 +214,7 @@ margin-top: 50px;
     left: 0;
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(214, 142, 8));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), aqua);
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -250,7 +250,7 @@ margin-top: 50px;
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid rgb(214, 142, 8);
+    border: 1px solid aqua;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -258,7 +258,7 @@ margin-top: 50px;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: rgb(214, 142, 8);
+    background: aqua;
 
 }
 
@@ -305,7 +305,7 @@ margin-top: 50px;
 margin-top: 30px;
 }
 .contact-left p img{
-color: rgb(214, 142, 8);
+color: aqua;
 margin-right: 15px;
 font-size: 25px;
 }
@@ -321,13 +321,13 @@ font-size: 25px;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: rgb(214, 142, 8);
+    color: aqua;
     transform: translateY(-10px);
 
 }
 .btn.btn2{
     display: inline-block;
-    background: rgb(214, 142, 8);
+    background: aqua;
 }
 
 .contact-right form {
@@ -376,7 +376,7 @@ form.btn2{
 
 .contact-right form button {
     display: inline-block;
-    background: rgb(214, 142, 8);
+    background: aqua;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -387,7 +387,7 @@ form.btn2{
 }
 
 .contact-right form button:hover {
-    background: #d19900;
+    background: aqua;
 }
 
 
@@ -412,7 +412,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: orangered;
+        background: aquamarine;
         position: fixed;
         top: 0;
         right: -200px;
