@@ -57,16 +57,18 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(214, 142, 8);
+    background: #00ff00;
+    box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
+
 nav ul li a:hover::after{
     width: 100%;
 }
