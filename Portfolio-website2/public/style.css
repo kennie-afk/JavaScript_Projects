@@ -161,10 +161,11 @@ margin-top: 50px;
 
     background: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.6s, transform 0.10s;
+    box-shadow: aquamarine;
 }
 .services-list div i{
     font-size: 50px;
@@ -177,7 +178,7 @@ margin-top: 50px;
 }
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: aqua;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -185,7 +186,45 @@ margin-top: 50px;
 .services-list div:hover{
     background: aqua;
     transform: translateY(-20px);
+    color: rgb(61, 59, 59);
 }
+#servicesHeadings div a {
+    text-decoration: none;
+    color: #00FFFF;
+    /* Default color (Aqua) */
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Smooth transition */
+}
+
+#servicesHeadings div a {
+    text-decoration: none;
+    color: #00FFFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#servicesHeadings div:hover a {
+    color: white;
+}
+
+#servicesHeadings div h2 {
+    color: white;
+    /* or any other color you want */
+}
+
+/*#servicesHeadings div:nth-child(1) h2 {
+    color: aqua;
+}
+
+#servicesHeadings div:nth-child(2) h2 {
+    color: aqua;
+}
+
+#servicesHeadings div:nth-child(3) h2 {
+    color: aqua;
+}*/
+
 #portfolio{
 
     padding: 50px 0;
@@ -463,10 +502,14 @@ nav .fas{
     display: block;
 }
 
-#themecolor{
-    color: #00FFFF;
+#themecolor {
+    background: linear-gradient(to right, #00FFFF, #00FF00);
+    /* Aqua to Green */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* for extra safety */
+    color: transparent;
+    /* backup */
     text-shadow: 0 0 1px #00FFFF, 0 0 2px #00FFFF;
-  
-
-
 }
