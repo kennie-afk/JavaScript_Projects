@@ -1,302 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Portfolio</title>
+    <title>Kennedy Mwanzia - Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-    <div id="header">
+    <header id="header">
         <div class="container">
-
             <nav>
-                                                <img id="kenlogo" src="images/logo2.webp" alt="" class="logo">
-
+                <div class="logo-container">
+                    <img id="kenlogo" src="images/logo2.webp" alt="Kennedy Mwanzia Logo" class="logo">
+                </div>
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-        
-                    <!-- Close button (X) -->
+                    <li><a href="#header" class="nav-link active" data-target-id="header">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-target-id="about">About</a></li>
+                    <li><a href="#services" class="nav-link" data-target-id="services">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-target-id="portfolio">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link" data-target-id="contact">Contact</a></li>
                     <li>
-                        <button onclick="closemenu()" style="background: none; border: none; cursor: pointer;">
-                            <i class="fas fa-times" style="font-size: 24px; color: #701919;" aria-label="Close menu"></i>
+                        <button onclick="closemenu()" class="nav-icon-btn" aria-label="Close menu">
+                            <i class="fas fa-times"></i>
                         </button>
                     </li>
                 </ul>
-        
-                <!-- Menu open icon (hamburger) -->
-                <i class="fas fa-bars" onclick="openmenu()" style="font-size: 35px; cursor: pointer; color: #701919;"
-                    aria-label="Open menu"></i>
+                <button onclick="openmenu()" class="nav-icon-btn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
-        
             <div class="header-text">
-                <p>Software Developer</p>
-                <h6>Hi, I'm <span>Kennedy Mwanzia</span> From <br>Nairobi - Kenya</h6>
+                <p>Full Stack Software Developer</p>
+                <h1>Hi, I'm <span class="typed-text" data-type-value="Kennedy Mwanzia"></span><span
+                        class="cursor">&nbsp;</span>
+                    <br>from Nairobi, Kenya
+                </h1>
             </div>
         </div>
+    </header>
 
-    </div>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user1.jpg" alt="">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title" id="themecolor">About Me</h1>
-                <style>
-                    .glow {
-                        color: #00FFFF;
-                        /* Glowy Aqua */
-                        text-shadow: 0 0 1px #00FFFF, 0 0 2px #00FFFF;
-                        /* Softer, lighter glow */
-                    }
-                </style>
-
-                    <p>
-                        <hr id="themecolor">
-
-        
-                        Hi, I’m a passionate <span class="glow">Full Stack Developer</span> with a love for crafting cutting-edge digital
-                        experiences! 💻 I specialize in building scalable and dynamic applications using <strong
-                            class="glow">JavaScript</strong> ⚡, <strong class="glow">React</strong> 🔥, <strong
-                            class="glow">Node.js</strong> 🌐, and <strong class="glow">Express</strong> 🚀. With a strong foundation in both
-                        front-end and back-end technologies, I create seamless, responsive websites and applications that users love to
-                        interact with. I’m proficient in managing databases with <strong class="glow">MySQL</strong> 🗄️, and I also have
-                        experience with <strong class="glow">PHP</strong> 🖥️ and <strong class="glow">Python</strong> 🐍 to tackle diverse
-                        development challenges.
-                    
-                        But I don't stop there – I'm deeply passionate about the emerging world of <strong class="glow">blockchain</strong>
-                        🔗. I’ve developed <strong class="glow">decentralized applications</strong> and smart contracts using <strong
-                            class="glow">Solidity</strong> ⛓️, pushing the boundaries of what's possible in the digital ecosystem. Version
-                        control with <strong class="glow">GitHub</strong> 🛠️ is second nature to me, ensuring smooth collaboration and
-                        clean, efficient code across every project.
-                    
-                        I’m constantly pushing myself to grow and evolve, learning new programming languages and frameworks every day 📚.
-                        Whether it's solving complex problems 🧠, enhancing user experiences 🎨, or diving into the world of <strong
-                            class="glow">blockchain</strong> 💡, I’m always ready to take on the next challenge and bring innovative ideas
-                        to life! 🌟
-                    </p>
-                    <div class="tab-tittles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <div class="image-border">
+                            <img src="images/user1.jpg" alt="Kennedy Mwanzia profile picture">
+                        </div>
                     </div>
-                    
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Design? UI/UX</span><br>Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web app development</li>
-                            <li><span>App Development</span><br>App development</li>
+                    <div class="about-col-2">
+                        <h1 class="sub-title" id="about-title">About Me</h1>
+                        <div class="about-content">
+                            <hr id="themecolor" class="section-divider">
+                            <p>
+                                Hi, I’m a passionate <span class="glow">Full Stack Developer</span> with a love for
+                                crafting
+                                cutting-edge digital
+                                experiences. I specialize in building scalable and dynamic applications using <strong
+                                    class="glow">JavaScript</strong>, <strong class="glow">React</strong>, <strong
+                                    class="glow">Node.js</strong>, and <strong class="glow">Express</strong>. With a
+                                strong
+                                foundation in both
+                                front-end and back-end technologies, I create seamless, responsive websites and
+                                applications
+                                that users love to
+                                interact with. I’m proficient in managing databases with <strong class="glow">MySQL</strong>,
+                                and I also have
+                                experience with <strong class="glow">PHP</strong> and <strong class="glow">Python</strong>
+                                to
+                                tackle diverse
+                                development challenges.
+                            </p>
+                            <p>
+                                Beyond traditional web development, I'm deeply passionate about the emerging world of
+                                <strong class="glow">blockchain</strong>.
+                                I’ve developed <strong class="glow">decentralized applications</strong> and smart
+                                contracts
+                                using <strong class="glow">Solidity</strong>, pushing the boundaries of what's possible
+                                in
+                                the
+                                digital ecosystem. Version
+                                control with <strong class="glow">GitHub</strong> is second nature to me, ensuring
+                                smooth
+                                collaboration and
+                                clean, efficient code across every project. You can find more of my work on my <a
+                                    href="https://github.com/kennie-afk" target="_blank" class="glow">GitHub
+                                    profile</a>.
+                            </p>
+                            <p>
+                                I’m constantly pushing myself to grow and evolve, learning new programming languages and
+                                frameworks every day.
+                                Whether it's solving complex problems, enhancing user experiences, or diving into the
+                                world
+                                of
+                                <strong class="glow">blockchain</strong>, I’m always ready to take on the next
+                                challenge and
+                                bring innovative ideas
+                                to life!
+                            </p>
+                            <div class="tab-tittles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
 
-                        </ul>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Front-End Development</span><br>
+                                        Expert in React.js, JavaScript (ES6+), HTML5, CSS3 (Flexbox, Grid, SASS/SCSS),
+                                        Tailwind
+                                        CSS. Strong proficiency in creating responsive, intuitive, and high-performance
+                                        user
+                                        interfaces.</li>
+                                    <li><span>Back-End Development</span><br>
+                                        Proficient in Node.js, Express.js, PHP, and Python. Experience with RESTful API
+                                        design
+                                        and implementation, server-side logic, and integration with databases.</li>
+                                    <li><span>Database Management</span><br>
+                                        Skilled in MySQL for relational database design, querying, and optimization.
+                                    </li>
+                                    <li><span>Blockchain Development</span><br>
+                                        Experience with Solidity for smart contract development and Web3.js for
+                                        decentralized
+                                        application (dApp) integration on Ethereum Virtual Machine (EVM) compatible
+                                        chains.
+                                    </li>
+                                    <li><span>Version Control</span><br>
+                                        Proficient in Git and GitHub for collaborative development, code management, and
+                                        deployment workflows.</li>
+                                    <li><span>UI/UX Design Principles</span><br>
+                                        Understanding of user-centered design principles to create engaging and
+                                        accessible
+                                        web
+                                        and app interfaces.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2023 - Present: Full Stack Developer</span><br>
+                                        Freelance & Personal Projects<br>
+                                        Developed and deployed various full-stack web applications, including e-commerce
+                                        platforms, content management systems, and interactive tools. Focused on
+                                        responsive
+                                        design, API integration, and database management.</li>
+                                    <li><span>2023 - 2024: Junior Web Developer</span><br>
+                                        Tech Solutions Inc. <br>
+                                        Contributed to the development of client-side web applications using React.js
+                                        and
+                                        REST
+                                        APIs. Assisted in debugging, code reviews, and implementing new features.</li>
+                                    <li><span>2024: Blockchain Project Contributor</span><br>
+                                        Open-Source Community <br>
+                                        Participated in the development of a decentralized voting application using
+                                        Solidity
+                                        and
+                                        Web3.js, gaining hands-on experience with smart contracts and blockchain
+                                        concepts.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021 - 2025: Bachelor of Science in Information Technology</span><br>
+                                        KCA University, Nairobi, Kenya</li>
+                                    <li><span>Online Certifications & Courses</span><br>
+                                        Continuous learning in advanced JavaScript, React, Node.js, php and Blockchain
+                                        development.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Kennedy UI/UX</span><br>Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web app development</li>
-                            <li><span>App Development</span><br>App development</li>
-
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Kenya </span><br>KCA University</li>
-                            <li><span>Web Development</span><br>Web app development</li>
-                            <li><span>App Development</span><br>App development</li>
-
-                        </ul>
-                    </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<div id="services">
-    <div class="container">
-     <h1 class="sub-title" id="themecolor">My Services</h1>
-     <div class="services-list" id="servicesHeadings">
-        <div>
-            <img src="images/full-stack.png" alt="Icon Description" width="40" height="40">
-
-            <h2>Web Design</h2>
-            <p>Crafting stunning, responsive websites tailored for seamless experiences across all devices. With expertise in
-            JavaScript, Contentful API, and cutting-edge CSS techniques, I build dynamic platforms that not only look great but
-            perform flawlessly. Your digital presence, reimagined with style and precision.</p>
-                <a href="#">Learn nore</a>
-        </div>
-        <div>
-            <img src="images/app-store.png" alt="Icon Description" width="40" height="40">
-
-            <h2>App Design</h2>
-            <p>Transforming ideas into powerful, user-centered web applications. Whether it's a scalable Payroll Management System or
-            an interactive Restaurant Management tool, I deliver sleek, efficient, and future-proof apps designed for real-world
-            success and effortless user engagement.</p>
-                <a href="#">Learn more</a>
-        </div>
-        <div>
-            <img src="images/block.png" alt="Icon Description" width="40" height="40">
-
-            <h2>Block chain</h2>
-            <p>Building secure, decentralized applications (dApps) with real-world impact. From smart contracts to full-scale
-            blockchain voting systems, I blend Solidity, Web3.js, and React into robust solutions that redefine transparency, trust,
-            and innovation in the digital age.</p>
-                <a href="#">Learn more</a>
-        </div>
-     </div>
- 
-    </div>
-</div>
-
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title" id="themecolor">My Work</h1>
- <div class="work-list">
-    <div class="work">
-        <img src="images/work1.jpg" alt="work space image" >
-
-        <div class="layer">
-            <h3>Ecomerce Website</h3>
-            <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
-            <a href="https://play.google.com/store" target="_blank">
-                
-            </a>
-        </div>
-       
-        
-        
-    </div>
-    <div class="work">
-        <img src="images/work2.jpg" alt="work space image" >
-        <div class="layer">
-            <h3>Music App</h3>
-            <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
-            <a href="https://play.google.com/store" target="_blank">
-                <img src="images/playstore.png" alt="Download from Play Store" width="20" height="80">
-            </a>
-        </div>
-    </div>
-    <div class="work">
-        <img src="images/work3.jpg" alt="work space image" >
-        <div class="layer">
-            <h3>Online Shopping App</h3>
-            <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
-            <a href="https://play.google.com/store" target="_blank">
-                <img src="images/playstore.png" alt="Download from Play Store" width="20" height="80">
-            </a>
-        </div>
-    </div>
- </div>
- <a href="#" class="btn">See more</a>
-    </div>
-</div>
-
-<div class="contact" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title" id="themecolor">Contact Me</h1>
-              
-            <p><i class="fas fa-envelope" style="font-size: 35px; margin-right: 10px;"></i>
-                kennedymwanzia001@gmail.com | kennieme24@gmail.com</p>
-            
-            <p><i class="fas fa-phone-alt" style="font-size: 35px; margin-right: 10px;"></i>
-                +254 796 516 595</p>
-
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram" style="font-size: 30px;"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp" style="font-size: 30px;"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter" style="font-size: 30px;"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in" style="font-size: 30px;"></i></a>
                 </div>
-                <a href="images/Curriculum Vitae(CV) Kennedy Mwanzia-2.pdf" download class="btn btn2">Download CV</a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                   <input type="text" name="Name" placeholder="Your Name" required>
-                   <input type="email" name="Email" placeholder="Your Email" required>
-                   <textarea name="Message" id="Message" rows="6" placeholder="Your Message"></textarea>
-                   <button type="submit" class="btn btn2">Send Message</button>
+        </section>
 
-                </form>
-                <span id="msg">
-                   
-                </span>
+        <section id="services" class="section">
+            <div class="container">
+                <h1 class="sub-title" id="services-title">My Services</h1>
+                <div class="services-list" id="servicesHeadings">
+                    <div class="service-item">
+                        <div class="icon-wrapper">
+                            <img src="images/full-stack.png" alt="Full Stack Icon" width="40" height="40"
+                                class="service-icon">
+                        </div>
+                        <h2>Web Development</h2>
+                        <p>Crafting stunning, responsive websites and dynamic web applications tailored for seamless
+                            experiences across all devices. With expertise in
+                            JavaScript, React, Node.js, and cutting-edge CSS techniques, I build platforms that are not
+                            only
+                            visually appealing but also perform flawlessly and are scalable.</p>
+                        <a href="#contact" class="learn-more">Inquire Now</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon-wrapper">
+                            <img src="images/app-store.png" alt="App Design Icon" width="40" height="40"
+                                class="service-icon">
+                        </div>
+                        <h2>App Design & Development</h2>
+                        <p>Transforming ideas into powerful, user-centered web applications. Whether it's a scalable
+                            Payroll
+                            Management System or
+                            an interactive Restaurant Management tool, I deliver sleek, efficient, and future-proof
+                            apps
+                            designed for real-world
+                            success and effortless user engagement.</p>
+                        <a href="#contact" class="learn-more">Inquire Now</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon-wrapper">
+                            <img src="images/block.png" alt="Blockchain Icon" width="40" height="40"
+                                class="service-icon">
+                        </div>
+                        <h2>Blockchain Solutions</h2>
+                        <p>Building secure, decentralized applications (dApps) with real-world impact. From smart
+                            contracts
+                            to full-scale
+                            blockchain voting systems, I blend Solidity, Web3.js, and React into robust solutions that
+                            redefine transparency, trust,
+                            and innovation in the digital age.</p>
+                        <a href="#contact" class="learn-more">Inquire Now</a>
+                    </div>
+                </div>
             </div>
-            
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h1 class="sub-title" id="portfolio-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work1.jpg" alt="GoldenHome E-commerce Website screenshot">
+                        <div class="layer">
+                            <h3>GoldenHome E-commerce Website</h3>
+                            <p>A dynamic and responsive e-commerce shopping cart built with vanilla JavaScript,
+                                featuring
+                                product data loaded dynamically via Contentful API.</p>
+                            <a href="https://goldenhomejs.netlify.app/" target="_blank"
+                                aria-label="View GoldenHome E-commerce Website">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work2.jpg" alt="Music App screenshot">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>An intuitive music streaming application connecting users to a vast library of artists
+                                and
+                                tracks. Download it from the Play Store.</p>
+                            <a href="https://play.google.com/store" target="_blank"
+                                aria-label="Download Music App from Play Store">
+                                <img src="images/playstore.png" alt="Download from Play Store" width="25" height="25">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work3.jpg" alt="Online Shopping App screenshot">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>A comprehensive mobile shopping platform offering a seamless Browse and purchasing
+                                experience. Download it from the Play Store.</p>
+                            <a href="https://play.google.com/store" target="_blank"
+                                aria-label="Download Online Shopping App from Play Store">
+                                <img src="images/playstore.png" alt="Download from Play Store" width="25" height="25">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/kennie-afk" target="_blank" class="btn">See more on GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title" id="contact-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i>
+                        kennedymwanzia001@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i>
+                        +254 796 516 595</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/(CV)Curriculum Vitae Kennedy _Mwanzia (3).pdf" download class="btn btn2">Download
+                        CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required aria-label="Your Name">
+                        <input type="email" name="Email" placeholder="Your Email" required aria-label="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"
+                            aria-label="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p id="themecolor">&copy;Copyright Kennedy Mwanzia 2025 | Technovation Next Level Enterprise.</p>
-    </div>
-</div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        <div class="copyright">
+            <p id="themecolor">&copy; Copyright Kennedy Mwanzia 2025 | Technovation Next Level Enterprise.</p>
+        </div>
+    </footer>
 
-function opentab(tabname) {
-    for (let tablink of tablinks) {
-        tablink.classList.remove("active-link"); 
-    }
-    for (let tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
-
-
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0" 
-    }
-    var sidemenu = document.getElementById("sidemenu");
-    function closemenu(){
-        sidemenu.style.right = "-200px" 
-    }
-</script>
-<script>
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbyb7tGoz2DLIpCjK__PLBrnBP4ZjRjY55rM4s6GybrBnDYBM2qLkr7LUDnAOUn7G790XA/exec';
-   const form = document.forms['submit-to-google-sheet'];
-   const msg = document.getElementById("msg");
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    console.log("Form submitted, waiting for response...");
-
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            console.log("Response received:", response);
-            if (response.ok) {
-                msg.innerHTML = "Success! Message sent."; 
-                console.log("Message updated.");
-                setTimeout(function() {
-                    msg.innerHTML = "";
-                    console.log("Message cleared after 5 seconds.");
-                }, 5000);
-                form.reset();
-            } else {
-                msg.innerHTML = "Error! Please try again.";
-                console.error("Response not OK:", response);
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
             }
-        })
-        .catch(error => {
-            console.error('Error!', error.message);
-            msg.innerHTML = "Error! Please check console.";
-        });
-});
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-250px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyb7tGoz2DLIpCjK__PLBrnBP4ZjRjY55rM4s6GybrBnDYBM2qLkr7LUDnAOUn7G790XA/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
 
-  </script>
-    </body>
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    if (response.ok) {
+                        msg.innerHTML = "Message sent successfully!";
+                        setTimeout(function () {
+                            msg.innerHTML = "";
+                        }, 5000);
+                        form.reset();
+                    } else {
+                        msg.innerHTML = "Error! Please try again.";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    msg.innerHTML = "Error sending message. Please try again later.";
+                });
+        });
+    </script>
+    <script>
+        const typedTextSpan = document.querySelector(".typed-text");
+        const cursorSpan = document.querySelector(".cursor");
+        const textToType = typedTextSpan.getAttribute('data-type-value');
+        const typingDelay = 100;
+        const erasingDelay = 50;
+        const newTextDelay = 1500;
+
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textToType.length) {
+                typedTextSpan.textContent += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typedTextSpan.textContent = textToType.substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                cursorSpan.classList.add("typing");
+                setTimeout(type, typingDelay + 100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            if (textToType.length) {
+                cursorSpan.classList.add("typing");
+                setTimeout(type, newTextDelay + 250);
+            }
+        });
+
+        document.querySelectorAll('nav .nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelectorAll('nav .nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                const targetId = this.getAttribute('data-target-id');
+                const targetSection = document.getElementById(targetId);
+                const sectionTitleElement = targetSection.querySelector('.sub-title');
+
+                if (sectionTitleElement) {
+                    const originalTitle = sectionTitleElement.textContent;
+                    sectionTitleElement.textContent = '';
+
+                    let charIdx = 0;
+                    const spinInterval = setInterval(() => {
+                        if (charIdx < originalTitle.length) {
+                            const char = originalTitle.charAt(charIdx);
+                            const span = document.createElement('span');
+                            span.textContent = char;
+                            span.style.display = 'inline-block';
+                            span.style.transformOrigin = 'center center';
+                            span.style.animation = `spinType 0.5s ease-out forwards ${charIdx * 0.05}s`;
+                            sectionTitleElement.appendChild(span);
+                            charIdx++;
+                        } else {
+                            clearInterval(spinInterval);
+                            let currentText = sectionTitleElement.textContent;
+                            let cursor = document.createElement('span');
+                            cursor.classList.add('cursor', 'typing');
+                            cursor.innerHTML = '&nbsp;';
+                            sectionTitleElement.appendChild(cursor);
+
+                            let i = 0;
+                            const revealInterval = setInterval(() => {
+                                if (i < originalTitle.length) {
+                                    sectionTitleElement.childNodes[i].style.opacity = 1;
+                                    i++;
+                                } else {
+                                    clearInterval(revealInterval);
+                                    cursor.classList.remove('typing');
+                                }
+                            }, 50);
+                        }
+                    }, 100);
+
+                    setTimeout(() => {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }, 500);
+                } else {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
 </html>
