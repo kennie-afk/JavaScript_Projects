@@ -9,27 +9,17 @@
 
 :root {
     --primary-color: #00ffff;
-    /* Vibrant Aqua */
     --text-color: #f0f8ff;
-    /* Almost White */
     --bg-color: #0a0a0a;
-    /* Deeper Dark */
     --secondary-bg-color: #1c1c1c;
-    /* Slightly Lighter Dark */
     --light-grey: #d3d3d3;
     --dark-grey: #333;
     --hover-effect: translateY(-7px);
-    /* Increased Hover Lift */
     --transition-speed: 0.4s;
-    /* Faster Transitions */
     --border-radius: 12px;
-    /* Softer Corners */
     --box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
-    /* Stronger Aqua Shadow */
     --glow-color: rgba(0, 255, 255, 0.9);
-    /* Intense Glow */
     --accent-bg-color: #151515;
-    /* More Contrasting Dark */
 }
 
 body {
@@ -78,7 +68,7 @@ nav {
 }
 
 .logo {
-    width: 150px;
+    width: 295px;
     transition: transform var(--transition-speed);
 }
 
@@ -134,7 +124,6 @@ nav ul li a.active::after {
     text-align: center;
     margin-top: 18%;
     font-size: 34px;
-    /* Removed background, padding, border-radius, and box-shadow for non-card appearance */
 }
 
 .header-text h1 {
@@ -143,7 +132,6 @@ nav ul li a.active::after {
     white-space: nowrap;
     overflow: hidden;
     position: relative;
-    /* This is the introductory heading, it should be glowy */
     text-shadow: 0 0 15px var(--glow-color);
 }
 
@@ -198,8 +186,6 @@ nav ul li a.active::after {
     padding: 90px 0;
     color: var(--light-grey);
     background: var(--accent-bg-color);
-    border-bottom: 3px solid var(--primary-color);
-    border-top: 3px solid var(--primary-color);
     box-shadow: inset 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
@@ -238,7 +224,6 @@ nav ul li a.active::after {
     font-weight: 700;
     color: var(--text-color);
     margin-bottom: 25px;
-    /* Removed text-shadow for non-glowy titles */
 }
 
 .section-divider {
@@ -333,13 +318,11 @@ nav ul li a.active::after {
 #services {
     padding: 40px 0;
     background: var(--bg-color);
-    /* Removed border-bottom and border-top here as per previous request */
 }
 
 #services-title {
     margin-bottom: 60px;
     text-align: center;
-    /* Removed text-shadow for non-glowy title */
 }
 
 .services-list {
@@ -362,7 +345,6 @@ nav ul li a.active::after {
     justify-content: flex-start;
     text-align: left;
     box-shadow: var(--box-shadow);
-    /* Removed border here as per previous request */
 }
 
 .service-item .icon-wrapper {
@@ -420,15 +402,12 @@ nav ul li a.active::after {
 #portfolio {
     padding: 60px 0;
     background: var(--accent-bg-color);
-    border-bottom: 3px solid var(--primary-color);
-    border-top: 3px solid var(--primary-color);
     box-shadow: inset 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 #portfolio-title {
     margin-bottom: 60px;
     text-align: center;
-    /* Removed text-shadow for non-glowy title */
 }
 
 .work-list {
@@ -558,7 +537,6 @@ nav ul li a.active::after {
 
 #contact-title {
     margin-bottom: 60px;
-    /* Removed text-shadow for non-glowy title */
 }
 
 .contact-left {
@@ -664,7 +642,93 @@ form .btn2 {
     color: var(--primary-color);
 }
 
-/* Media Queries for Responsiveness */
+/* --- Media Queries for Responsiveness --- */
+
+/* Extra Small Screens */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 10px 5%;
+    }
+
+    #header {
+        height: 80vh;
+    }
+
+    .header-text {
+        margin-top: 80%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .logo {
+        width: 120px;
+        /* Adjusted logo size for very small screens */
+    }
+
+    nav ul {
+        width: 200px;
+        padding-top: 40px;
+    }
+
+    nav ul li {
+        margin: 20px;
+    }
+
+    .sub-title {
+        font-size: 45px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .tab-contents ul li {
+        font-size: 14px;
+    }
+
+    .service-item {
+        padding: 30px;
+    }
+
+    .service-item h2 {
+        font-size: 24px;
+    }
+
+    .contact-left p {
+        font-size: 15px;
+    }
+
+    .contact-left p i {
+        font-size: 24px;
+    }
+
+    .social-icons a {
+        font-size: 28px;
+        margin-right: 15px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    form .btn2 {
+        padding: 12px 45px;
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 13px;
+        padding: 20px 0;
+    }
+}
+
+/* Smaller Mobile Screens */
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url(images/phone-background.webp);
@@ -682,8 +746,14 @@ form .btn2 {
         text-shadow: 0 0 10px var(--glow-color);
     }
 
+    .logo {
+        width: 150px;
+        /* Adjusted logo size for standard mobile screens */
+    }
+
     nav .nav-icon-btn {
         display: block;
+        z-index: 1001;
     }
 
     nav ul {
@@ -699,29 +769,56 @@ form .btn2 {
         box-shadow: -7px 0 20px rgba(0, 255, 255, 0.5);
     }
 
+    nav ul.active {
+        right: 0;
+    }
+
     nav ul li {
         display: block;
         margin: 30px;
     }
 
+    nav ul li a {
+        color: var(--bg-color);
+    }
+
+    nav ul li a::after {
+        background: var(--bg-color);
+    }
+
     .nav-icon-btn {
         position: absolute;
         top: 30px;
-        left: 30px;
+        right: 30px;
+        left: auto;
         color: var(--text-color);
     }
 
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
+        text-align: center;
     }
 
     .about-col-1 {
         margin-bottom: 35px;
     }
 
-    .about-col-2 {
-        font-size: 15px;
+    .about-col-1 img {
+        max-width: 80%;
+    }
+
+    .sub-title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .section-divider {
+        margin: 0 auto 35px auto;
+    }
+
+    .tab-tittles {
+        justify-content: center;
     }
 
     .tab-links {
@@ -732,6 +829,12 @@ form .btn2 {
     .contact-left,
     .contact-right {
         flex-basis: 100%;
+    }
+
+    .contact-left p,
+    .social-icons {
+        text-align: center;
+        justify-content: center;
     }
 
     .copyright {
@@ -752,7 +855,6 @@ form .btn2 {
     .header-text h1 {
         font-size: 60px;
         text-shadow: 0 0 15px var(--glow-color);
-        /* Maintain glow for intro on tablet screens */
     }
 
     .sub-title {
@@ -771,6 +873,10 @@ form .btn2 {
 
     .about-col-1 img {
         max-width: 85%;
+    }
+
+    .logo {
+        width: 290px;
     }
 
     .services-list,
