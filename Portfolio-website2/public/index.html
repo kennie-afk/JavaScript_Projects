@@ -164,10 +164,10 @@
         <img src="images/work1.jpg" alt="work space image" >
 
         <div class="layer">
-            <h3>Social Media App</h3>
+            <h3>Ecomerce Website</h3>
             <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
             <a href="https://play.google.com/store" target="_blank">
-                <img src="images/playstore.png" alt="Download from Play Store" width="20" height="20">
+                
             </a>
         </div>
        
@@ -244,13 +244,12 @@
 
 function opentab(tabname) {
     for (let tablink of tablinks) {
-        tablink.classList.remove("active-link"); // Corrected classList case
+        tablink.classList.remove("active-link"); 
     }
     for (let tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
 
-    // Find and activate the clicked tab
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
@@ -280,7 +279,7 @@ form.addEventListener('submit', e => {
         .then(response => {
             console.log("Response received:", response);
             if (response.ok) {
-                msg.innerHTML = "Success! Message sent."; // Update message
+                msg.innerHTML = "Success! Message sent."; 
                 console.log("Message updated.");
                 setTimeout(function() {
                     msg.innerHTML = "";
