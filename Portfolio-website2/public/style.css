@@ -193,13 +193,14 @@ nav ul li a.active::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .about-col-1 {
     flex-basis: 38%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-col-1 img {
@@ -665,7 +666,6 @@ form .btn2 {
 
     .logo {
         width: 120px;
-        /* Adjusted logo size for very small screens */
     }
 
     nav ul {
@@ -748,7 +748,6 @@ form .btn2 {
 
     .logo {
         width: 150px;
-        /* Adjusted logo size for standard mobile screens */
     }
 
     nav .nav-icon-btn {

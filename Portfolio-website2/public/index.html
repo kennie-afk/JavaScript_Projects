@@ -230,6 +230,9 @@
                         <a href="#contact" class="learn-more">Inquire Now</a>
                     </div>
                 </div>
+                <div class="button-container">
+                    <a href="https://github.com/kennie-afk" target="_blank" class="btn">See more on GitHub</a>
+                </div>
             </div>
         </section>
 
@@ -302,11 +305,15 @@
                         CV</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
+                    <form action="https://formspree.io/f/mjkrbpjw" method="POST">
                         <input type="text" name="Name" placeholder="Your Name" required aria-label="Your Name">
                         <input type="email" name="Email" placeholder="Your Email" required aria-label="Your Email">
+                        <input type="number" name="PhoneNumber" placeholder="Your Phone Number" required
+                            aria-label="Your Phone Number">
+
                         <textarea name="Message" rows="6" placeholder="Your Message"
                             aria-label="Your Message"></textarea>
+                            <input type="hidden" name="_next" value="/public/thankyou.html" />
                         <button type="submit" class="btn btn2">Send Message</button>
                     </form>
                     <span id="msg"></span>
@@ -341,31 +348,6 @@
         function closemenu() {
             sidemenu.style.right = "-250px";
         }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyb7tGoz2DLIpCjK__PLBrnBP4ZjRjY55rM4s6GybrBnDYBM2qLkr7LUDnAOUn7G790XA/exec';
-        const form = document.forms['submit-to-google-sheet'];
-        const msg = document.getElementById("msg");
-
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    if (response.ok) {
-                        msg.innerHTML = "Message sent successfully!";
-                        setTimeout(function () {
-                            msg.innerHTML = "";
-                        }, 5000);
-                        form.reset();
-                    } else {
-                        msg.innerHTML = "Error! Please try again.";
-                    }
-                })
-                .catch(error => {
-                    console.error('Error!', error.message);
-                    msg.innerHTML = "Error sending message. Please try again later.";
-                });
-        });
     </script>
     <script>
         const typedTextSpan = document.querySelector(".typed-text");
@@ -468,7 +450,12 @@
             });
         });
 
-
+        document.addEventListener("DOMContentLoaded", function () {
+            const homeSection = document.getElementById("header");
+            if (homeSection) {
+                homeSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
     </script>
 </body>
 

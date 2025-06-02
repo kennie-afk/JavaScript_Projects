@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Specific styles for the thank you page to ensure centering and full height */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Ensure body takes full viewport height */
+            justify-content: space-between;
+            /* Pushes footer to the bottom */
+            align-items: center;
+            text-align: center;
+        }
+
+        .thank-you-content {
+            flex-grow: 1;
+            /* Allows content to take available space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 12%;
+            /* Consistent padding with other sections */
+            width: 100%;
+            /* Ensure it takes full width */
+            max-width: 800px;
+            /* Limit width for better readability on large screens */
+            margin: auto;
+            /* Center the content block */
+        }
+
+        .thank-you-content .sub-title {
+            margin-bottom: 20px;
+            font-size: 70px;
+            /* Slightly larger for emphasis */
+            text-shadow: 0 0 20px var(--glow-color);
+            /* Stronger glow */
+        }
+
+        .thank-you-content p {
+            font-size: 20px;
+            color: var(--light-grey);
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .thank-you-content .btn {
+            margin-top: 20px;
+            padding: 18px 60px;
+            /* Slightly larger button */
+            font-size: 22px;
+        }
+
+        /* Responsive adjustments for the thank you page */
+        @media only screen and (max-width: 600px) {
+            .thank-you-content {
+                padding: 30px 5%;
+            }
+
+            .thank-you-content .sub-title {
+                font-size: 45px;
+            }
+
+            .thank-you-content p {
+                font-size: 16px;
+            }
+
+            .thank-you-content .btn {
+                padding: 14px 45px;
+                font-size: 18px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .thank-you-content .sub-title {
+                font-size: 35px;
+            }
+
+            .thank-you-content p {
+                font-size: 14px;
+            }
+
+            .thank-you-content .btn {
+                padding: 12px 40px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thank-you-content">
+        <h1 class="sub-title">Thank You!</h1>
+        <hr class="section-divider">
+        <p>Your message has been successfully sent. We appreciate you reaching out and will get back to you as soon as
+            possible.</p>
+        <p>In the meantime, feel free to explore more of our work.</p>
+        <a href="index.html" class="btn">
+            <i class="fas fa-home"></i> Go to Home
+        </a>
+    </div>
+
+    <div class="copyright">
+    </div>
+</body>
+
+</html>
