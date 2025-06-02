@@ -122,7 +122,7 @@ nav ul li a.active::after {
 
 .header-text {
     text-align: center;
-    margin-top: 18%;
+    margin-top: 10%;
     font-size: 34px;
 }
 
@@ -643,7 +643,7 @@ form .btn2 {
     color: var(--primary-color);
 }
 
-/* --- Media Queries for Responsiveness --- */
+/* Media Queries for Responsiveness */
 
 /* Extra Small Screens */
 @media only screen and (max-width: 480px) {
@@ -653,10 +653,12 @@ form .btn2 {
 
     #header {
         height: 80vh;
+        align-items: flex-start;
+        padding-top: 70px;
     }
 
     .header-text {
-        margin-top: 80%;
+        margin-top: 5vh;
         font-size: 16px;
     }
 
@@ -734,10 +736,12 @@ form .btn2 {
         background-image: url(images/phone-background.webp);
         background-blend-mode: overlay;
         background-color: rgba(0, 0, 0, 0.5);
+        align-items: flex-start;
+        padding-top: 80px;
     }
 
     .header-text {
-        margin-top: 120%;
+        margin-top: 8vh;
         font-size: 18px;
     }
 
