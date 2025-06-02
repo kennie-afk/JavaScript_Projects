@@ -664,6 +664,8 @@ form .btn2 {
 
     .header-text h1 {
         font-size: 30px;
+        white-space: normal;
+        overflow: visible;
     }
 
     .logo {
@@ -748,6 +750,9 @@ form .btn2 {
     .header-text h1 {
         font-size: 36px;
         text-shadow: 0 0 10px var(--glow-color);
+        white-space: normal;
+        overflow: visible;
+        line-height: 1.2;
     }
 
     .logo {
