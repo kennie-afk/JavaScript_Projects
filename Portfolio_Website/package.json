@@ -1,5 +1,5 @@
 {
-  "name": "portfolio_website",
+  "name": "portfolio-website2",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -9,13 +9,12 @@
 
   },
   "keywords": [],
-  "author": "Kennedy Mwanzia Masai",
+  "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2",
-    "open": "^10.1.0"
+    "express": "^5.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
