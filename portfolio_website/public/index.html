@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennedy Mwanzia - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                    <img id="kenlogo" src="images/logo2.webp" alt="Kennedy Mwanzia Logo" class="logo">
+                </div>
+               <ul id="sidemenu">
+                    <li><a href="#header" class="nav-link active" data-target-id="header">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-target-id="about">About</a></li>
+                    <li><a href="#services" class="nav-link" data-target-id="services">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-target-id="portfolio">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link" data-target-id="contact">Contact</a></li>
+                    <li>
+                        <button onclick="closemenu()" class="nav-icon-btn" aria-label="Close menu">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </li>
+                </ul>
+                <button onclick="openmenu()" class="nav-icon-btn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Software Developer</p>
+                <h1>Hi, I'm <span class="typed-text" data-type-value="Kennedy Mwanzia"></span><span
+                        class="cursor">&nbsp;</span>
+                    <br>from Nairobi, Kenya
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <div class="image-border">
+                            <img src="images/user1.jpg" alt="Kennedy Mwanzia profile picture">
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <div class="about-content">
+                            <hr id="themecolor" class="section-divider">
+                            <p>
+                                Hi, I’m a passionate <span class="glow">Full Stack Developer</span> with a love for
+                                crafting
+                                cutting-edge digital
+                                experiences. I specialize in building scalable and dynamic applications using <strong
+                                    class="glow">JavaScript</strong>, <strong class="glow">React</strong>, <strong
+                                    class="glow">Node.js</strong>, and <strong class="glow">Express</strong>. With a
+                                strong
+                                foundation in both
+                                front-end and back-end technologies, I create seamless, responsive websites and
+                                applications
+                                that users love to
+                                interact with. I’m proficient in managing databases with <strong
+                                    class="glow">MySQL</strong>,
+                                and I also have
+                                experience with <strong class="glow">PHP</strong> and <strong
+                                    class="glow">Python</strong>
+                                to
+                                tackle diverse
+                                development challenges.
+                            </p>
+                            <p>
+                                Beyond traditional web development, I'm deeply passionate about the emerging world of
+                                <strong class="glow">blockchain</strong>.
+                                I’ve developed <strong class="glow">decentralized applications</strong> and smart
+                                contracts
+                                using <strong class="glow">Solidity</strong>, pushing the boundaries of what's possible
+                                in
+                                the
+                                digital ecosystem. Version
+                                control with <strong class="glow">GitHub</strong> is second nature to me, ensuring
+                                smooth
+                                collaboration and
+                                clean, efficient code across every project. You can find more of my work on my <a
+                                    href="https://github.com/kennie-afk" target="_blank" class="glow">GitHub
+                                    profile</a>.
+                            </p>
+                            <p>
+                                I’m constantly pushing myself to grow and evolve, learning new programming languages and
+                                frameworks every day.
+                                Whether it's solving complex problems, enhancing user experiences, or diving into the
+                                world
+                                of
+                                <strong class="glow">blockchain</strong>, I’m always ready to take on the next
+                                challenge and
+                                bring innovative ideas
+                                to life!
+                            </p>
+                            <div class="tab-tittles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Front-End Development</span><br>
+                                        Expert in React.js, JavaScript (ES6+), HTML5, CSS3 (Flexbox, Grid, SASS/SCSS),
+                                        Tailwind
+                                        CSS. Strong proficiency in creating responsive, intuitive, and high-performance
+                                        user
+                                        interfaces.</li>
+                                    <li><span>Back-End Development</span><br>
+                                        Proficient in Node.js, Express.js, PHP, and Python. Experience with RESTful API
+                                        design
+                                        and implementation, server-side logic, and integration with databases.</li>
+                                    <li><span>Database Management</span><br>
+                                        Skilled in MySQL for relational database design, querying, and optimization.
+                                    </li>
+                                    <li><span>Blockchain Development</span><br>
+                                        Experience with Solidity for smart contract development and Web3.js for
+                                        decentralized
+                                        application (dApp) integration on Ethereum Virtual Machine (EVM) compatible
+                                        chains.
+                                    </li>
+                                    <li><span>Version Control</span><br>
+                                        Proficient in Git and GitHub for collaborative development, code management, and
+                                        deployment workflows.</li>
+                                    <li><span>UI/UX Design Principles</span><br>
+                                        Understanding of user-centered design principles to create engaging and
+                                        accessible
+                                        web
+                                        and app interfaces.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2023 - Present: Full Stack Developer</span><br>
+                                        Freelance & Personal Projects<br>
+                                        Developed and deployed various full-stack web applications, including e-commerce
+                                        platforms, content management systems, and interactive tools. Focused on
+                                        responsive
+                                        design, API integration, and database management.</li>
+                                    <li><span>2023 - 2024: Junior Web Developer</span><br>
+                                        Tech Solutions Inc. <br>
+                                        Contributed to the development of client-side web applications using React.js
+                                        and
+                                        REST
+                                        APIs. Assisted in debugging, code reviews, and implementing new features.</li>
+                                    <li><span>2024: Blockchain Project Contributor</span><br>
+                                        Open-Source Community <br>
+                                        Participated in the development of a decentralized voting application using
+                                        Solidity
+                                        and
+                                        Web3.js, gaining hands-on experience with smart contracts and blockchain
+                                        concepts.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021 - 2025: Bachelor of Science in Information Technology</span><br>
+                                        KCA University, Nairobi, Kenya</li>
+                                    <li><span>Online Certifications & Courses</span><br>
+                                        Continuous learning in advanced JavaScript, React, Node.js, php and Blockchain
+                                        development.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list" id="servicesHeadings">
+                    <div class="service-item">
+                        <div class="icon-wrapper">
+                            <img src="images/full-stack.png" alt="Full Stack Icon" width="40" height="40"
+                                class="service-icon">
+                        </div>
+                        <h2>Web Development</h2>
+                        <p>Crafting stunning, responsive websites and dynamic web applications tailored for seamless
+                            experiences across all devices. With expertise in
+                            JavaScript, React, Node.js, and cutting-edge CSS techniques, I build platforms that are not
+                            only
+                            visually appealing but also perform flawlessly and are scalable.</p>
+                        <a href="#contact" class="learn-more">Inquire Now</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon-wrapper">
+                            <img src="images/app-store.png" alt="App Design Icon" width="40" height="40"
+                                class="service-icon">
+                        </div>
+                        <h2>App Design & Development</h2>
+                        <p>Transforming ideas into powerful, user-centered web applications. Whether it's a scalable
+                            Payroll
+                            Management System or
+                            an interactive Restaurant Management tool, I deliver sleek, efficient, and future-proof
+                            apps
+                            designed for real-world
+                            success and effortless user engagement.</p>
+                        <a href="#contact" class="learn-more">Inquire Now</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="icon-wrapper">
+                            <img src="images/block.png" alt="Blockchain Icon" width="40" height="40"
+                                class="service-icon">
+                        </div>
+                        <h2>Blockchain Solutions</h2>
+                        <p>Building secure, decentralized applications (dApps) with real-world impact. From smart
+                            contracts
+                            to full-scale
+                            blockchain voting systems, I blend Solidity, Web3.js, and React into robust solutions that
+                            redefine transparency, trust,
+                            and innovation in the digital age.</p>
+                        <a href="#contact" class="learn-more">Inquire Now</a>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/kennie-afk" target="_blank" class="btn">See more on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work1.jpg" alt="GoldenHome E-commerce Website screenshot">
+                        <div class="layer">
+                            <h3>GoldenHome E-commerce Website</h3>
+                            <p>A dynamic and responsive e-commerce shopping cart built with vanilla JavaScript,
+                                featuring
+                                product data loaded dynamically via Contentful API.</p>
+                            <a href="https://goldenhomejs.netlify.app/" target="_blank"
+                                aria-label="View GoldenHome E-commerce Website">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work2.jpg" alt="Music App screenshot">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>An intuitive music streaming application connecting users to a vast library of artists
+                                and
+                                tracks. Download it from the Play Store.</p>
+                            <a href="https://play.google.com/store" target="_blank"
+                                aria-label="Download Music App from Play Store">
+                                <img src="images/playstore.png" alt="Download from Play Store" width="25" height="25">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work3.jpg" alt="Online Shopping App screenshot">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>A comprehensive mobile shopping platform offering a seamless Browse and purchasing
+                                experience. Download it from the Play Store.</p>
+                            <a href="https://play.google.com/store" target="_blank"
+                                aria-label="Download Online Shopping App from Play Store">
+                                <img src="images/playstore.png" alt="Download from Play Store" width="25" height="25">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/kennie-afk" target="_blank" class="btn">See more on GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i>
+                        kennedymwanzia001@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i>
+                        +254 796 516 595</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/(CV)Curriculum Vitae Kennedy _Mwanzia (3).pdf" download class="btn btn2">Download
+                        CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mjkrbpjw" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required aria-label="Your Name">
+                        <input type="email" name="Email" placeholder="Your Email" required aria-label="Your Email">
+                        <input type="number" name="PhoneNumber" placeholder="Your Phone Number" required
+                            aria-label="Your Phone Number">
+
+                        <textarea name="Message" rows="6" placeholder="Your Message"
+                            aria-label="Your Message"></textarea>
+                            <input type="hidden" name="_next" value="/public/thankyou.html" />
+                        <button  type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p id="themecolor">&copy; Copyright Kennedy Mwanzia 2025 | Technovation Next Level Enterprise.</p>
+        </div>
+    </footer>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-250px";
+        }
+    </script>
+    <script>
+        const typedTextSpan = document.querySelector(".typed-text");
+        const cursorSpan = document.querySelector(".cursor");
+        const textToType = typedTextSpan.getAttribute('data-type-value');
+        const typingDelay = 100;
+        const erasingDelay = 50;
+        const newTextDelay = 1500;
+
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textToType.length) {
+                typedTextSpan.textContent += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typedTextSpan.textContent = textToType.substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                cursorSpan.classList.add("typing");
+                setTimeout(type, typingDelay + 100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            if (textToType.length) {
+                cursorSpan.classList.add("typing");
+                setTimeout(type, newTextDelay + 250);
+            }
+        });
+
+        document.querySelectorAll('nav .nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelectorAll('nav .nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                const targetId = this.getAttribute('data-target-id');
+                const targetSection = document.getElementById(targetId);
+                const sectionTitleElement = targetSection.querySelector('.sub-title');
+
+                if (sectionTitleElement) {
+                    const originalTitle = sectionTitleElement.textContent;
+                    sectionTitleElement.textContent = '';
+
+                    let charIdx = 0;
+                    const spinInterval = setInterval(() => {
+                        if (charIdx < originalTitle.length) {
+                            const char = originalTitle.charAt(charIdx);
+                            const span = document.createElement('span');
+                            span.textContent = char;
+                            span.style.display = 'inline-block';
+                            span.style.transformOrigin = 'center center';
+                            span.style.animation = `spinType 0.5s ease-out forwards ${charIdx * 0.05}s`;
+                            sectionTitleElement.appendChild(span);
+                            charIdx++;
+                        } else {
+                            clearInterval(spinInterval);
+                            let currentText = sectionTitleElement.textContent;
+                            let cursor = document.createElement('span');
+                            cursor.classList.add('cursor', 'typing');
+                            cursor.innerHTML = '&nbsp;';
+                            sectionTitleElement.appendChild(cursor);
+
+                            let i = 0;
+                            const revealInterval = setInterval(() => {
+                                if (i < originalTitle.length) {
+                                    sectionTitleElement.childNodes[i].style.opacity = 1;
+                                    i++;
+                                } else {
+                                    clearInterval(revealInterval);
+                                    cursor.classList.remove('typing');
+                                }
+                            }, 50);
+                        }
+                    }, 100);
+
+                    setTimeout(() => {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }, 500);
+                } else {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const homeSection = document.getElementById("header");
+            if (homeSection) {
+                homeSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+
+</html>

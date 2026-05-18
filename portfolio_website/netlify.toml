@@ -1,0 +1,6 @@
+[build]
+  command = "npm install && npm run build"  # If you have a build step
+  publish = "public"  # Or wherever your built files go, if applicable
+
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
