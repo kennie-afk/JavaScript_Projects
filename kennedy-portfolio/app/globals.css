@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --red: #e63939;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #ffffff;
+  color: #1f1f1f;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid #e5e5e5;
+}
+
+.btn-red {
+  background: var(--red);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+  background: #c1121f;
+  transform: translateY(-2px);
+}
+
+.card {
+  border-radius: 12px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: perspective(1200px) rotateX(6deg) rotateY(8deg) scale(1.04);
+  box-shadow: 0 30px 60px -15px rgb(0 0 0 / 0.15);
+}
+
+.section {
+  scroll-margin-top: 80px;
+}
